@@ -1,0 +1,281 @@
+CRITICAL - 2024-12-10 07:53:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 3 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 07:56:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 3 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 08:01:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 3 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 08:02:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 3 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 08:02:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/dashboard.php"
+[Method: GET, Route: admin]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/dashboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 3 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 08:03:22 --> ErrorException: Undefined variable $totalOrders
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\dashbord.php on line 39.
+ 1 APPPATH\Views\admin\dashbord.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalOrders', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\admin\\dashbord.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\admin\\dashbord.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashbord', [], true)
+ 5 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashbord', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 08:04:27 --> ErrorException: include(mydatabase.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\dashbord.php on line 131.
+ 1 APPPATH\Views\admin\dashbord.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(mydatabase.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\admin\\dashbord.php', 131)
+ 2 APPPATH\Views\admin\dashbord.php(131): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\admin\\dashbord.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashbord', [], true)
+ 6 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashbord', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 08:05:08 --> ErrorException: include(mydatabase.php): Failed to open stream: No such file or directory
+[Method: GET, Route: admin]
+in APPPATH\Views\layout.php on line 13.
+ 1 APPPATH\Views\layout.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(mydatabase.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\layout.php', 13)
+ 2 APPPATH\Views\layout.php(13): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\layout.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layout', [], true)
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashbord', [], true)
+ 7 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashbord', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 08:06:15 --> ErrorException: Undefined global variable $_SESSION
+[Method: GET, Route: admin]
+in APPPATH\Views\admin\navbar.php on line 97.
+ 1 APPPATH\Views\admin\navbar.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\admin\\navbar.php', 97)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\admin\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('admin/navbar', null, true)
+ 5 APPPATH\Views\layout.php(17): CodeIgniter\View\View->include('admin/navbar')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\layout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layout', [], true)
+ 9 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashbord', [], true)
+10 APPPATH\Controllers\AdminContoller.php(11): view('admin/dashbord', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminContoller->index()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminContoller))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 09:06:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "customer/create.php"
+[Method: GET, Route: customer/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customer/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customer/create', [], true)
+ 3 APPPATH\Controllers\Customer.php(12): view('customer/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Customer->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 09:08:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "customer/create.php"
+[Method: GET, Route: customer/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customer/create.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customer/create', [], true)
+ 3 APPPATH\Controllers\Customer.php(12): view('customer/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Customer->create()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 09:51:31 --> ErrorException: Undefined variable $result
+[Method: GET, Route: product/create]
+in APPPATH\Views\product\create.php on line 125.
+ 1 APPPATH\Views\product\create.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\product\\create.php', 125)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\product\\create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product/create', [], true)
+ 5 APPPATH\Controllers\product.php(12): view('product/create')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->create()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 09:51:50 --> ErrorException: include(footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: product/create]
+in APPPATH\Views\product\create.php on line 152.
+ 1 APPPATH\Views\product\create.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(footer.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\product\\create.php', 152)
+ 2 APPPATH\Views\product\create.php(152): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\product\\create.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product/create', [], true)
+ 6 APPPATH\Controllers\product.php(12): view('product/create')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->create()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 10:54:48 --> ErrorException: include(mydatabase.php): Failed to open stream: No such file or directory
+[Method: GET, Route: customer/view]
+in APPPATH\Views\customer\view.php on line 55.
+ 1 APPPATH\Views\customer\view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(mydatabase.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php', 55)
+ 2 APPPATH\Views\customer\view.php(55): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customer/view', [], true)
+ 6 APPPATH\Controllers\Customer.php(12): view('customer/view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 10:55:33 --> ErrorException: include(footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: customer/view]
+in APPPATH\Views\customer\view.php on line 78.
+ 1 APPPATH\Views\customer\view.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(footer.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php', 78)
+ 2 APPPATH\Views\customer\view.php(78): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customer/view', [], true)
+ 6 APPPATH\Controllers\Customer.php(12): view('customer/view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 10:55:37 --> ErrorException: include(footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: customer/view]
+in APPPATH\Views\customer\view.php on line 78.
+ 1 APPPATH\Views\customer\view.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(footer.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php', 78)
+ 2 APPPATH\Views\customer\view.php(78): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customer/view', [], true)
+ 6 APPPATH\Controllers\Customer.php(12): view('customer/view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 10:55:49 --> ErrorException: include(footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: customer/view]
+in APPPATH\Views\customer\view.php on line 78.
+ 1 APPPATH\Views\customer\view.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(footer.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php', 78)
+ 2 APPPATH\Views\customer\view.php(78): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customer/view', [], true)
+ 6 APPPATH\Controllers\Customer.php(12): view('customer/view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 10:55:54 --> ErrorException: include(footer.php): Failed to open stream: No such file or directory
+[Method: GET, Route: customer/view]
+in APPPATH\Views\customer\view.php on line 78.
+ 1 APPPATH\Views\customer\view.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(footer.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php', 78)
+ 2 APPPATH\Views\customer\view.php(78): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\app\\Views\\customer\\view.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('customer/view', [], true)
+ 6 APPPATH\Controllers\Customer.php(12): view('customer/view')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Customer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Customer))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
+CRITICAL - 2024-12-10 11:31:58 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "logos.jpg" alt="
+[Method: GET, Route: assets/images/logos.jpg%22%20alt=]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('assets/images/logos.jpg" alt=')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/images/logos.jpg" alt=')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\komal\\Codeigniter\\AdminPanel\\public\\index.php')
