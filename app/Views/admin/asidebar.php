@@ -1,7 +1,7 @@
 <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="d-xl-none d-lg-none" href="dashbord.php">Dashboard</a>
+                    <a class="d-xl-none d-lg-none" href="<?= base_url('/admin')?>">Dashboard</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -11,7 +11,7 @@
                                 Menu
                             </li>
                              <li class="nav-item ">
-                                <a class="nav-link active" href="dashbord.php"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
+                                <a class="nav-link active"href="<?= base_url('/admin')?>"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
                                 <!-- <div id="submenu-1" class="collapse submenu" style="">
                                      <ul class="nav flex-column">
                                         
@@ -90,10 +90,10 @@
                                 <div id="submenu-4" class="collapse submenu" >
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?= base_url('order/view');?>">All Orders</a>
+                                            <a class="nav-link" href="<?= base_url('order/views');?>">All Orders</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?= base_url('order/create');?>">Add Order</a>
+                                            <a class="nav-link" href="<?= base_url('order/view');?>">Add Order</a>
                                         </li>
                                         <!-- <li class="nav-item">
                                             <a class="nav-link" href="pages/multiselect.html">Multiselect</a>

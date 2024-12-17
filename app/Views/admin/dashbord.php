@@ -36,7 +36,7 @@
                                         </a>
                                        
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1"></h1>
+                                            <h1 class="mb-1"><?= $totalBookings; ?></h1>
                                         </div>
                                         <div class="metric-label d-inline-block float-right text-success font-weight-bold">
                                             <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
@@ -53,7 +53,7 @@
                                         </a>
                                       
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1"></h1>
+                                            <h1 class="mb-1"><?= $totalCustomers; ?></h1>
                                         </div>
                                         <div class="metric-label d-inline-block float-right text-success font-weight-bold">
                                             <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
@@ -70,7 +70,7 @@
                                         </a>
                                      
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1"></h1>
+                                            <h1 class="mb-1"><?= $totalEvents; ?></h1>
                                         </div>
                                         <div class="metric-label d-inline-block float-right text-primary font-weight-bold">
                                             <span>N/A</span>
@@ -106,28 +106,23 @@
                                     <h5 class="card-header">Latest Orders</h5>
                                     <div class="card-body">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered ">
-                                                <thead class="" style="background:#0E0C28">
-                                                    <tr class="">
-                                                        <th class=" text-light">#</th>
-                                                        <th class="  text-light">Image</th>
-                                                        <th class="  text-light">Customer Name</th>
-                                                        <th class="  text-light">Product Name</th>
-                                                      
-                                                        <th class="  text-light">Quantity</th>
-                                                        <th class="  text-light">Price</th>
-                                                        <th class="  text-light">Category</th>
-                                                        <th class="  text-light">Order_status</th>
-                                                        <th class="  text-light">Action</th>
-                                                       
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="">
-                                                    
-                                                   
-                                                   
-                                                </tbody>
-                                            </table>
+                                        <table class="table table-striped table-bordered first">
+                                    <thead style="background:#0E0C28">
+                                        <tr>
+                                            <th style="color:white">Customer Name</th>
+                                            <th style="color:white">Product Name</th>
+                                            <th style="color:white">Quantity</th>
+                                            <th style="color:white">Price</th>
+                                            <th style="color:white">Pincode</th>
+                                            <th style="color:white">Address</th>
+                                            <th style="color:white">Order Date</th>
+                                          
+                                            <th style="color:white">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="orderTableBody">
+                                    </tbody>
+                                </table>
                                         </div>
                                     </div>
                                 </div>
@@ -143,6 +138,76 @@
             <!-- ============================================================== -->
             <!-- end footer -->
             <!-- ============================================================== -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        function loadOrders() {
+            $.ajax({
+                url: "<?= site_url('order/getOrders'); ?>", 
+                type: "GET",
+                dataType: "json",
+                success: function(data) {
+                    var rows = '';
+                    $.each(data, function(index, order) {
+                        
+                        rows += `
+                            <tr id="order-${order.id}">
+                                <td>${order.customer_name}</td>
+                                <td>${order.product_name}</td>
+                                <td>${order.quantity}</td>
+                                <td>${order.price}</td>
+                                <td>${order.pincode}</td>
+                                <td>${order.address}</td>
+                                <td>${order.order_date}</td>
+                               
+                                <td>
+                                    <a href="<?= base_url('/order/details')?>?id=${order.id}">
+                                        <i class='align-middle me-2' data-feather='eye'></i>
+                                    </a>
+                                 
+                                    <a href="javascript:void(0);" class="delete-btn" data-id="${order.id}">
+                                        <i class='align-middle me-2' data-feather='trash-2'></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        `;
+                    });
+                    $('#orderTableBody').html(rows); 
+                    feather.replace(); 
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error fetching data: ' + error);
+                }
+            });
+        }
+
+        loadOrders();
+
         
+        $('#orderTableBody').on('click', '.delete-btn', function() {
+            const orderId = $(this).data('id');
+            if (confirm('Are you sure you want to delete this order?')) {
+                $.ajax({
+                    url: `<?= site_url('order/delete'); ?>/${orderId}`,
+                    type: "POST",
+                    success: function(response) {
+                        if (response.success) {
+                            $(`#order-${orderId}`).remove();
+                            alert(response.message);
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Error deleting record: ' + error);
+                    }
+                });
+            }
+        });
+    });
+</script>
+      
 
 <?= $this->endSection(); ?>

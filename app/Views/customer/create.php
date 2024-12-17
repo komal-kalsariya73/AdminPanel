@@ -1,6 +1,8 @@
 <?= $this->extend('layout'); ?>
 <?= $this->section('content'); ?>
-
+<style>
+   
+</style>
 <div class="dashboard-ecommerce">
    <div class="container-fluid dashboard-content">
 
@@ -27,7 +29,7 @@
             <div class="card-body">
                <form id="customerForm" class="shadow bg-light w-75 m-auto p-4" method="post" enctype="multipart/form-data">
                   <h2 class="text-center mb-4">Add Customer Details</h2>
-
+                  <input type="hidden" name="id" id="id">
                   <div class="row">
                      <!-- First Name -->
                      <div class="col-md-6 mb-4">
@@ -66,7 +68,7 @@
                         <label for="phone" class="form-label text-dark">Phone</label>
                         <div class="input-group">
                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                           <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number">
+                           <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number">
                         </div>
                         <span class="text-danger" id="phoneError"></span>
                      </div>
@@ -88,11 +90,11 @@
                   <div class="d-md-flex justify-content-start align-items-center py-2">
                      <label class="form-label p-2 text-dark">Gender</label>
                      <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="gender" id="gender_male" value="Male" class="custom-control-input">
+                        <input type="radio" name="gender" id="gender" value="Male" class="custom-control-input">
                         <span class="custom-control-label">Male</span>
                      </label>
                      <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" name="gender" id="gender_female" value="Female" class="custom-control-input">
+                        <input type="radio" name="gender" id="gender" value="Female" class="custom-control-input">
                         <span class="custom-control-label">Female</span>
                      </label>
                      <span class="text-danger" id="genderError"></span>
@@ -104,7 +106,7 @@
                         <label for="pincode" class="form-label text-dark">Pincode</label>
                         <div class="input-group">
                            <span class="input-group-text"><i class="fas fa-map-pin"></i></span>
-                           <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter Pincode">
+                           <input type="number" class="form-control" id="pincode" name="pincode" placeholder="Enter Pincode">
                         </div>
                         <span class="text-danger" id="pincodeError"></span>
                      </div>
@@ -132,8 +134,10 @@
                         <label for="image" class="form-label text-dark">Profile Image</label>
                         <div class="input-group">
                            <span class="input-group-text"><i class="fas fa-image"></i></span>
-                           <input type="file" class="form-control" id="image" name="image" accept="image/*">
+                           <input type="file" class="form-control" id="image" name="image">
                         </div>
+                        <input type="hidden" name="existing_profile_image" id="existing_profile_image" value="">
+                        <div id="currentProfileImage"></div>
                         <span class="text-danger" id="imageError"></span>
                      </div>
                   </div>
@@ -144,6 +148,7 @@
                         <button type="submit" class="btn" style="background:#07193e;color:white">Submit Form</button>
                      </div>
                   </div>
+                  <div id="responseMessage"></div>
                </form>
             </div>
          </div>
@@ -151,40 +156,91 @@
    </div>
 </div>
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('#customerForm').on('submit', function(e) {
-        e.preventDefault();
+    $(document).ready(function() {
+        const id = getQueryParameter('id');
+        if (id) {
+            fetchUserData(id);
+        }
 
-        let formData = new FormData(this);
-
-        // Reset previous error messages
-        $('.text-danger').text('');
-
-        $.ajax({
-            url: '<?= base_url('customer/insert') ?>',
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            success: function(response) {
-                if (response.status === 'success') {
-                    alert(response.message);
-                    $('#customerForm')[0].reset();
-                } else if (response.status === 'error') {
-                    // Display validation errors for each field
-                    for (let field in response.errors) {
-                        $('#' + field + 'Error').text(response.errors[field]);
+        function fetchUserData(id) {
+            $.ajax({
+                url: `<?= base_url('/customer/fetchCustomer/') ?>${id}`,
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        populateForm(response.data);
+                    } else {
+                        alert('Failed to fetch user data: ' + response.message);
                     }
+                },
+                error: function() {
+                    alert('An error occurred while fetching user data.');
                 }
-            },
-            error: function() {
-                alert('Something went wrong!');
-            },
+            });
+        }
+
+        function populateForm(data) {
+
+            $("#id").val(data.id);
+            $("#name").val(data.name);
+            $("#lastname").val(data.lastname);
+            $("#email").val(data.email);
+            $("#phone").val(data.phone);
+            $("#address").val(data.address);
+            $("#pincode").val(data.pincode);
+            $(`input[name="gender"][value="${data.gender}"]`).prop("checked", true);
+           
+            $("#city").val(data.city);
+        
+
+            $("#existing_profile_image").val(data.image);
+
+            if (data.image) {
+                $("#currentProfileImage").html(
+                    `<p>Current Image: <img src="<?= base_url() ?>${data.image}" alt="Profile Image" class="img-fluid" style="max-width: 100px;"></p>`
+                );
+            }
+        }
+
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        $("#customerForm").on('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const formAction = id ? 'update' : 'insert';
+
+            $(".text-danger").html("");
+
+            $.ajax({
+                url: `<?= base_url('customer/')?>${formAction}`,
+                method: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    if (response.success) {
+                        $("#responseMessage").html('<p class="text-success">' + response.message + '<a href="<?= base_url('/customer/view')?>">View</a>' + '</p>');
+                        $("#customerForm")[0].reset();
+                    } else {
+                        $.each(response.errors, function(key, value) {
+                            $('#' + key + 'Error').html('<small class="text-danger">' + value + '</small>');
+                        });
+                    }
+                },
+                error: function() {
+                    $("#responseMessage").html('<p class="text-danger">An error occurred while submitting the form. Please try again.</p>');
+                }
+            });
         });
     });
-});
 </script>
+
 
 <?= $this->endSection(); ?>
